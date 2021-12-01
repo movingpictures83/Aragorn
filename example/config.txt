@@ -1,0 +1,2 @@
+Prefix plugins/Aragorn/example
+Plugin Aragorn inputfile PA14.fasta outputfile tRNA.aragorn.txt

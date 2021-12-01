@@ -1,0 +1,2513 @@
+------------------------------
+ARAGORN v1.2.38   Dean Laslett
+------------------------------
+
+Please reference the following paper if you use this
+program as part of any published research.
+
+Laslett, D. and Canback, B. (2004) ARAGORN, a
+program for the detection of transfer RNA and
+transfer-messenger RNA genes in nucleotide sequences.
+Nucleic Acids Research, 32;11-16.
+
+
+Searching for tRNA genes with no introns
+Searching for tmRNA genes
+Assuming circular topology, search wraps around ends
+Searching both strands
+Using standard genetic code
+
+
+refseq|NC_008463.1|chromosome Pseudomonas aeruginosa UCBPP-PA14 chromosome, complete genome. length=6537648;assembly=GCF_000014625.1
+6537648 nucleotides in sequence
+Mean G+C content = 66.3%
+ 
+1.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             t-a
+             c-g
+             c-g
+             g-c     ta
+            t   cgccc  a
+    cga    a    !+!!!  g
+   t   ctcg     gtggg  c
+   g   !!!+    c     tt
+   g   gagt     t
+    ata    a     g
+            c-ggg
+            t-a
+            g-c
+            c-g
+            c-g
+           c   a
+           t   a
+            ccg
+ 
+ 
+ 
+    tRNA-Arg(ccg)
+    77 bases, %GC = 63.6
+    Sequence c[312958,313034]
+ 
+
+ 
+2.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             c-g
+             c-g
+             t+g
+             a-t     tg
+            t   gtgcc  a
+    tga    a    !!!!!  g
+   c   ctcg     cacgg  c
+   g   !!!!     c    tt
+   g   gagc     t
+    tta         g
+            a-tg
+            g+t
+            a-t
+            g-c
+            g-c
+            a-t
+           c   a
+           t   a
+            cat
+ 
+ 
+    tRNA-Met(cat)
+    77 bases, %GC = 57.1
+    Sequence c[640407,640483]
+ 
+
+ 
+3.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             t-a
+             g-c     ta
+            t   ccgtc  a
+    tga    a    !!!!!  g
+   t   ctcg     ggcag  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    g     g
+            c-gag
+            a-t
+            c-g
+            c-g
+            c-g
+           c   a
+           t   a
+            gat
+ 
+ 
+ 
+    tRNA-Ile(gat)
+    77 bases, %GC = 58.4
+    Sequence [734686,734762]
+ 
+
+ 
+4.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             c-g
+             a-t     ct
+            t   tcctc  a
+     ga    a    !!!!!  g
+    c  ctcg     aggag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            c-g
+            t-a
+            g-c
+            c-g
+           t   c
+           t   a
+            tgc
+ 
+ 
+ 
+    tRNA-Ala(tgc)
+    76 bases, %GC = 63.2
+    Sequence [734791,734866]
+ 
+
+ 
+5.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             a-t
+             g-c
+             g-c
+             g-c
+             a-t     ta
+            t   cttcc  a
+    tgag   t    !!!!!  g
+   g    ccc     gaagg  c
+   g    !!!      c   tt
+   c    ggg       t
+    caaa   a       t
+            t-ac   c
+            c-g g   a
+            a-t  t   g
+            g-c   c  a
+            a-t    at
+           c   a
+           t   a
+            gta
+ 
+ 
+ 
+    tRNA-Tyr(gta)
+    85 bases, %GC = 51.8
+    Sequence [740947,741031]
+ 
+
+ 
+6.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             t-a
+             a-t     tt
+            t   cgccc  a
+     ga    a    !!!!!  g
+    t  cttg     gcggg  c
+    g  !!+!     t    tt
+    g  gagc     a
+     ta    c    g
+            t-at
+            c-g
+            a-t
+            g-c
+            c-g
+           c   a
+           t   a
+            tcc
+ 
+ 
+ 
+    tRNA-Gly(tcc)
+    74 bases, %GC = 58.1
+    Sequence [741058,741131]
+ 
+
+ 
+7.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             t-a
+             c-g
+             a-t
+             t-a
+             g-c     ta
+            t   tcgcc  a
+     ga    a    !!!!!  a
+    t  ctcg     agcgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-gag
+            a-t
+            c-g
+            c-g
+            c-g
+           t   a
+           t   a
+            ggt
+ 
+ 
+ 
+    tRNA-Thr(ggt)
+    76 bases, %GC = 53.9
+    Sequence [741151,741226]
+ 
+
+ 
+8.
+ 
+                 ca
+                c
+               g
+             a-t
+             g-c
+             g-c
+             c-g
+             c-g
+             a-t
+             g-c     tt
+            t   ctccc  a
+     aa    a    !+!!!  g
+    t  ctcg     ggggg  c
+   t   !!!!    t     tt
+   g   gagc     t
+    gca    g     g
+            g-cag
+            c-g
+            g-c
+            g-c
+            t-a
+           c   a
+           t   a
+            cca
+ 
+ 
+ 
+    tRNA-Trp(cca)
+    76 bases, %GC = 61.8
+    Sequence [742560,742635]
+ 
+
+ 
+9.
+ 
+ 
+ 
+               c
+             g-c
+             g+t
+             c c
+             g.g
+             g-c
+             c-g
+             a-t     ta
+            t   gcggc  c
+   tggg    g    !!!!!  a
+   g   gctg     cgccg  c
+   a   !!+!      c   ac
+   t   cggc       g
+    cgg   c        c
+           tc-ga    a
+            g-c t    t
+            g-c  c   c
+            c-g   c   g
+            g+t    t   g
+            g-c     g  c
+           c   c     tt
+           t   g
+            tct
+ 
+ 
+    tRNA-Arg(tct)
+    90 bases, %GC = 73.3
+    Sequence [1181882,1181971]
+ 
+
+ 
+10.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             t-a
+             c-g
+             g-c
+             g-c     tg
+            t   ctctc  a
+    taag   g    !!!!!  g
+   c    gcg     gagag  c
+   g    !!!     t    tt
+   g    cgc      g
+    taga       t-a
+            g+t c-g
+            g+t  t-a
+            c-g   g-c
+            g-c   g   a
+            g-c     cg
+            a-t
+           t   a
+           t   a
+            caa
+ 
+ 
+    tRNA-Leu(caa)
+    87 bases, %GC = 59.8
+    Sequence c[1244740,1244826]
+ 
+
+ 
+11.
+ 
+                 ca
+                c
+               g
+             g-c
+             t-a
+             c-g
+             c-g
+             c-g
+             g-c
+             g-c     cc
+            t   tctcc  a
+    taa    a    +!!!!  g
+   t   ctcg     ggagg  c
+   g   !!!!    t     tt
+   g   gagc     t
+    ata    a     g
+            t-aag
+            c-g
+            c-g
+            c-g
+            c-g
+           c   a
+           t   a
+            cct
+ 
+ 
+ 
+    tRNA-Arg(cct)
+    77 bases, %GC = 61.0
+    Sequence [1760535,1760611]
+ 
+
+ 
+12.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             g-c
+             a-t
+             t-a     ct
+            t   ctgcc  a
+     ga    a    !+!!!  g
+    c  ctcg     ggcgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    a     g
+            t-agg
+            c-g
+            t-a
+            g-c
+            c-g
+           c   a
+           t   a
+            tac
+ 
+ 
+ 
+    tRNA-Val(tac)
+    76 bases, %GC = 59.2
+    Sequence [1896332,1896407]
+ 
+
+ 
+13.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             g-c
+             c-g
+             g-c
+             g-c     tg
+            t   tgccc  a
+    tga    a    +!!!!  g
+   c   cttg     gcggg  c
+   g   !!!+    c     tt
+   g   gaat     t
+    tta    a     g
+            c-ggg
+            c-g
+            g-c
+            g-c
+            c-g
+           c   c
+           t   a
+            gtc
+ 
+ 
+ 
+    tRNA-Asp(gtc)
+    77 bases, %GC = 67.5
+    Sequence [1896424,1896500]
+ 
+
+ 
+14.
+ 
+                 ca
+                c
+               g
+             t-a
+             c-g
+             c-g
+             g-c
+             c-g
+             g-c
+             a-t     tg
+            t   ggacc  a
+     ga    a    !!!!!  g
+    t  ctcg     cctgg  c
+   c   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            a-tgg
+            a-t
+            t-a
+            g-c
+            a-t
+           c   a
+           t   a
+            gtt
+ 
+ 
+ 
+    tRNA-Asn(gtt)
+    76 bases, %GC = 55.3
+    Sequence c[2044200,2044275]
+ 
+
+ 
+15.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             t-a
+             a-t     ct
+            t   ctgcc  a
+     ga    a    !!!!!  g
+    c  ctcg     gacgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            t-a
+            t-a
+            g-c
+            c-g
+           a   t
+           t   a
+            ggc
+ 
+ 
+ 
+    tRNA-Ala(ggc)
+    76 bases, %GC = 60.5
+    Sequence [2053074,2053149]
+ 
+
+ 
+16.
+ 
+                 ca
+                c
+               g
+             g-c
+             t-a
+             c-g
+             c-g
+             c-g
+             c-g
+             t-a     tg
+            t   tcccc  a
+    tga    c    !!!!!  g
+   g   tctg     agggg  c
+   g   +!!!     c    tt
+   c   ggac    a
+    cta        a
+            a-t
+            c-g
+            c-g
+            g-c
+            c-g
+            c-g
+           c   c
+           t   a
+            ttc
+ 
+ 
+    tRNA-Glu(ttc)
+    76 bases, %GC = 64.5
+    Sequence [2053198,2053273]
+ 
+
+ 
+17.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             t-a
+             a-t     ct
+            t   ctgcc  a
+     ga    a    !!!!!  g
+    c  ctcg     gacgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            t-a
+            t-a
+            g-c
+            c-g
+           a   t
+           t   a
+            ggc
+ 
+ 
+ 
+    tRNA-Ala(ggc)
+    76 bases, %GC = 60.5
+    Sequence [2053367,2053442]
+ 
+
+ 
+18.
+ 
+                 ca
+                c
+               g
+             g-c
+             t-a
+             c-g
+             c-g
+             c-g
+             c-g
+             t-a     tg
+            t   tcccc  a
+    tga    c    !!!!!  g
+   g   tctg     agggg  c
+   g   +!!!     c    tt
+   c   ggac    a
+    cta        a
+            a-t
+            c-g
+            c-g
+            g-c
+            c-g
+            c-g
+           c   c
+           t   a
+            ttc
+ 
+ 
+    tRNA-Glu(ttc)
+    76 bases, %GC = 64.5
+    Sequence [2053489,2053564]
+ 
+
+ 
+19.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             g-c
+             a-t
+             t-a     ct
+            t   ctgcc  a
+     ga    a    !+!!!  g
+    c  ctcg     ggcgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    a     g
+            t-agg
+            c-g
+            t-a
+            g-c
+            c-g
+           c   a
+           t   a
+            tac
+ 
+ 
+ 
+    tRNA-Val(tac)
+    76 bases, %GC = 59.2
+    Sequence [2092473,2092548]
+ 
+
+ 
+20.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             g-c
+             c-g
+             g-c
+             g-c     tg
+            t   tgccc  a
+    tga    a    +!!!!  g
+   c   cttg     gcggg  c
+   g   !!!+    c     tt
+   g   gaat     t
+    tta    a     g
+            c-ggg
+            c-g
+            g-c
+            g-c
+            c-g
+           c   c
+           t   a
+            gtc
+ 
+ 
+ 
+    tRNA-Asp(gtc)
+    77 bases, %GC = 67.5
+    Sequence [2092565,2092641]
+ 
+
+ 
+21.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             g-c
+             c-g
+             g-c
+             g-c     tg
+            t   tgccc  a
+    tga    a    +!!!!  g
+   c   cttg     gcggg  c
+   g   !!!+    c     tt
+   g   gaat     t
+    tta    a     g
+            c-ggg
+            c-g
+            g-c
+            g-c
+            c-g
+           c   c
+           t   a
+            gtc
+ 
+ 
+ 
+    tRNA-Asp(gtc)
+    77 bases, %GC = 67.5
+    Sequence [2092756,2092832]
+ 
+
+ 
+22.
+ 
+                 ca
+                c
+               a
+             c-g
+             g-c
+             g-c
+             a-t
+             g-c
+             c-g
+             g-c     ta
+            t   tgacc  a
+    cga    a    +!!!!  g
+   t   cgcg     gctgg  c
+   t   !!!!    c     tt
+   g   gcgc     t
+    gta    g     g
+            t-aag
+            c-g
+            t-a
+            c-g
+            g-c
+           t   a
+           t   g
+            cgg
+ 
+ 
+ 
+    tRNA-Pro(cgg)
+    77 bases, %GC = 63.6
+    Sequence c[2174089,2174165]
+ 
+
+ 
+23.
+ 
+ 
+ 
+               c
+             g-c
+             a-t
+             t+g
+             c-g
+             t-a
+             t c
+             c-g     acc
+            t   gcggc   g
+     ca    g    !!!+!   g
+    c  gtcg     cgctg  c
+   g   ++!!      g   tt
+   g   tggc       g
+    cag            t
+            t-ag    a
+            c-g t    c
+            g-c  c    c
+            c-g   g    t
+            c-g    c    g
+            g-c     a    c
+           t   t     a   c
+           t   g      g   g
+            cca        g  a
+                        c t
+                         g
+    tRNA-Trp(cca)
+    94 bases, %GC = 69.1
+    Sequence c[2176029,2176122]
+ 
+
+ 
+24.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             t-a
+             g-c
+             a-t
+             g-c
+             g-c     ta
+            t   ctccc  a
+    tgag   g    !!!!!  g
+   g    cct     gaggg  c
+   g    !!!      c   tt
+   t    gga     a-t
+    tgaa   g   t t-a
+            c-g   a-t
+            a-t    c-g
+            c-g     g-c
+            g+t      g-c
+            c-g      g   a
+           c   a       aa
+           t   a
+            gga
+ 
+ 
+ 
+    tRNA-Ser(gga)
+    90 bases, %GC = 57.8
+    Sequence c[2362885,2362974]
+ 
+
+ 
+25.
+ 
+ 
+ 
+               c
+             c-g
+             c a
+             g+t
+             c-g
+             g+t
+             c-g
+            gt+g     gt
+            c   tagcc  a
+    gag    a    !!! !  g
+   c   cttc    catcag  c
+   t   !!!!    g     tt
+   g   gaag     a
+    ggc          c
+            c ag-c
+            g-c a.g
+            c-g  g-c
+            g-c   g-c
+            c-g    t+g
+           g   g    t+g
+           t   t     g-c
+            tgc      a   t
+                       tg
+ 
+ 
+    tRNA-Ala(tgc)
+    91 bases, %GC = 65.9
+    Sequence [2373063,2373153]
+ 
+
+ 
+26.
+ 
+                 ca
+                c
+               g
+             g-c
+             t-a
+             c-g
+             c-g
+             c-g
+             c-g
+             t-a     tg
+            t   tcccc  a
+    tga    c    !!!!!  g
+   g   tctg     agggg  c
+   g   +!!!     c    tt
+   c   ggac    a
+    cta        a
+            a-t
+            c-g
+            c-g
+            g-c
+            c-g
+            c-g
+           c   c
+           t   a
+            ttc
+ 
+ 
+    tRNA-Glu(ttc)
+    76 bases, %GC = 64.5
+    Sequence [2395469,2395544]
+ 
+
+ 
+27.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             a-t
+             a-t     tg
+            t   tgctc  a
+     ga    a    +!!!!  g
+    t  ctcg     gcgag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-ggg
+            g-c
+            a-t
+            c-g
+            c-g
+           t   a
+           t   a
+            gcc
+ 
+ 
+ 
+    tRNA-Gly(gcc)
+    76 bases, %GC = 60.5
+    Sequence [2395547,2395622]
+ 
+
+ 
+28.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             a-t
+             a-t     tg
+            t   tgctc  a
+     ga    a    +!!!!  g
+    t  ctcg     gcgag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-ggg
+            g-c
+            a-t
+            c-g
+            c-g
+           t   a
+           t   a
+            gcc
+ 
+ 
+ 
+    tRNA-Gly(gcc)
+    76 bases, %GC = 60.5
+    Sequence [2395707,2395782]
+ 
+
+ 
+29.
+ 
+                 ca
+                c
+               a
+             a-t
+             g-c
+             g-c
+             c-g
+             a-t
+             c-g
+             g-c     ta
+            t   taacc  a
+    tga    a    +!!!!  g
+   t   ctcg     gttgg  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    a     g
+            c-ggg
+            c-g
+            a-t
+            c-g
+            c-g
+           t   t
+           t   a
+            gac
+ 
+ 
+ 
+    tRNA-Val(gac)
+    77 bases, %GC = 54.5
+    Sequence [2440744,2440820]
+ 
+
+ 
+30.
+ 
+                 ca
+                c
+               a
+             c-g
+             g-c
+             g-c
+             g-c
+             g+t
+             c-g
+             g-c     ta
+            t   ctcac  a
+    cga    a    !!!!!  g
+   c   cgcg     gagtg  c
+   t   !!!!    c     tt
+   g   gcgc     t
+    gta    a     g
+            c-ggg
+            t-a
+            t-a
+            g-c
+            c-g
+           a   t
+           t   g
+            ggg
+ 
+ 
+ 
+    tRNA-Pro(ggg)
+    77 bases, %GC = 64.9
+    Sequence [2474588,2474664]
+ 
+
+ 
+31.
+ 
+ 
+                c
+               g
+             c-g
+             g.a
+             g-c
+             t+g
+             g-c
+             g+t
+             g-c     ga
+            t   aacgt  a
+   ctgg    c    ! !!+  g
+   g   gcca     tcgcg  c
+   g   !!!      c    tt
+   c   cggc      g
+    cag   a    g-c
+           ac-g c-g
+            g-c  g+t
+            g+t   g-c
+            g+t    c-g
+            c a     g-c
+            g-c      a.g
+           c   c      a.g
+           t   g       g+t
+            cca        c   a
+                         cg
+ 
+    tRNA-Trp(cca)
+    98 bases, %GC = 72.4
+    Sequence c[2523615,2523712]
+ 
+
+ 
+32.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             a-t
+             g-c
+             g-c
+             t+g
+             g-c     ta
+            t   cactc  a
+    tgag   g    !!!!!  g
+   g    ccg     gtgag  c
+   g    !!!      c   tt
+   t    ggc     g-c
+    ttaa   a   c a-t
+            a-t   a-t
+            c-g    g-c
+            g-c     g+t
+            g-c      g-c
+            t-a      g   a
+           c   a       ag
+           t   a
+            tga
+ 
+ 
+ 
+    tRNA-Ser(tga)
+    90 bases, %GC = 57.8
+    Sequence [2634238,2634327]
+ 
+
+ 
+33.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             a-t
+             a-t     tg
+            t   tgctc  a
+     ga    a    +!!!!  g
+    t  ctcg     gcgag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-ggg
+            g-c
+            a-t
+            c-g
+            c-g
+           t   a
+           t   a
+            gcc
+ 
+ 
+ 
+    tRNA-Gly(gcc)
+    76 bases, %GC = 60.5
+    Sequence [2658638,2658713]
+ 
+
+ 
+34.
+ 
+                 ca
+                c
+               t
+             g-c
+             g-c
+             c-g
+             t-a
+             g-c
+             a-t
+             g-c     tt
+            t   cagcc  a
+     gag   a    ! !!!  g
+    t   acg     gccgg  c
+    g   !!!     c    tt
+    g   tgc     a
+     tta   a    a
+            c tg
+            c-g
+            g-c
+            g-c
+            a-t
+           t   a
+           t   a
+            gca
+ 
+ 
+ 
+    tRNA-Cys(gca)
+    74 bases, %GC = 56.8
+    Sequence [2665032,2665105]
+ 
+
+ 
+35.
+ 
+ 
+                c
+               g
+             c-g
+             g+t
+             g-c
+             c-g
+             g-c
+             g.a
+             c-g
+            cg-c     gg
+            t   ctggc  a
+       g   g    !+!+!  g
+      g cgg     ggctg  c
+      g !!!      c   tt
+        gcc       c
+       c  t        g
+           gg.ac    c
+            t-a g    g
+            c-g  g    t
+            g-c   c    c
+            g.g    g    c
+           c   c    g   a
+           t   a     c   a
+            act       g   c
+                       a  c
+                        ag
+    tRNA-Ser(act)
+    90 bases, %GC = 76.7
+    Sequence c[3532448,3532537]
+ 
+
+ 
+36.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             a-t
+             g-c
+             c-g
+             g-c
+             g-c     tg
+            t   tgccc  a
+    tga    a    +!!!!  g
+   c   cttg     gcggg  c
+   g   !!!+    c     tt
+   g   gaat     t
+    tta    a     g
+            c-ggg
+            c-g
+            g-c
+            g-c
+            c-g
+           c   c
+           t   a
+            gtc
+ 
+ 
+ 
+    tRNA-Asp(gtc)
+    77 bases, %GC = 67.5
+    Sequence c[3675518,3675594]
+ 
+
+ 
+37.
+ 
+                 ca
+                c
+               c
+             g-c
+             t-a
+             g-c
+             g-c
+             g+t
+             c-g
+             g-c     tt
+            t   taccc  a
+     ga    a    +!!!!  g
+    t  ctcg     gtggg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-ggt
+            a-t
+            g-c
+            g-c
+            a-t
+           t   c
+           t   g
+            gtg
+ 
+ 
+ 
+    tRNA-His(gtg)
+    76 bases, %GC = 59.2
+    Sequence c[3686872,3686947]
+ 
+
+ 
+38.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             g-c
+             g-c
+             a-t
+             c-g
+             g-c     tg
+            t   ctctc  a
+    taag   g    !!!!!  g
+   t    gtg     gagag  c
+   g    !!!          tt
+   g    cac     t
+    taga   a   c-g
+            c-g g-c
+            t-a  c-g
+            g-c   c-g
+            g-c   g   a
+            a-t     ca
+           t   t
+           t   g
+            tag
+ 
+ 
+ 
+    tRNA-Leu(tag)
+    85 bases, %GC = 58.8
+    Sequence c[3687014,3687098]
+ 
+
+ 
+39.
+ 
+                 ca
+                c
+               c
+             g-c
+             t-a
+             g-c
+             g-c
+             g+t
+             c-g
+             g-c     tt
+            t   taccc  a
+     ga    a    +!!!!  g
+    t  ctcg     gtggg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            c-ggt
+            a-t
+            g-c
+            g-c
+            a-t
+           t   c
+           t   g
+            gtg
+ 
+ 
+ 
+    tRNA-His(gtg)
+    76 bases, %GC = 59.2
+    Sequence c[3687153,3687228]
+ 
+
+ 
+40.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             g+t
+             c-g
+             c-g
+             c-g
+             g-c     tg
+            t   cgtcc  a
+    cga    a    !!!!!  g
+   t   ctcg     gcagg  c
+   g   !!!!     c    tt
+   g   gagc     t
+    ata         g
+            a-tg
+            t-a
+            c-g
+            c-g
+            g-c
+            c-g
+           c   a
+           t   a
+            tct
+ 
+ 
+    tRNA-Arg(tct)
+    77 bases, %GC = 64.9
+    Sequence c[3687280,3687356]
+ 
+
+ 
+41.
+ 
+                 c
+                c
+               g
+             g+t
+             t-a
+             t+g
+             g-c
+             c-g
+             c-g
+             g+t
+             t-a     tt
+      tg    a   gttgc  g
+     g  gtag    +++!!  t
+     c  !!!!    tggcg  c
+     t  catc     c   ct
+      gg   g    c-g
+           a   c g-c
+            g.g   g-c
+            c-g    c-g
+            g-c     g-c
+            c-g      t+g
+            g-c       a.g
+           g   g       g-c
+           a   g        g-c
+            cga         c   g
+                          ggt
+ 
+    tRNA-Ser(cga)
+    96 bases, %GC = 71.9
+    Sequence c[4234168,4234263]
+ 
+
+ 
+42.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             a-t
+             g-c
+             a-t
+             g-c
+             a-t     ta
+            t   atccc  a
+    tgag   g    !!!!!  a
+   g    gcc     taggg  c
+   g    !!!      c   tt
+   t    cgg     g-c
+    cgaa   g   t a-t
+            a-t   g-c
+            c-g    t+g
+            g-c     c-g
+            g-c      a-t
+            a-t      g   a
+           t   a       ca
+           t   a
+            cga
+ 
+ 
+ 
+    tRNA-Ser(cga)
+    90 bases, %GC = 55.6
+    Sequence c[4552975,4553064]
+ 
+
+ 
+43.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             g-c
+             t-a     ta
+            t   catcc  a
+     ga    a    !!!!!  g
+    t  ctcg     gtagg  c
+   c   !!!!     c    tt
+   g   gagc     t
+    gta         g
+            a-tg
+            g+t
+            t-a
+            t-a
+            g-c
+            g-c
+           c   a
+           t   a
+            ttt
+ 
+ 
+    tRNA-Lys(ttt)
+    76 bases, %GC = 51.3
+    Sequence c[4591103,4591178]
+ 
+
+ 
+44.
+ 
+                 ca
+                c
+               a
+             c a
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             a-t     ta
+            t   cgacc  a
+    tga    g    !+!!!  a
+   c   cgag     gttgg  c
+   t   !!!!    c     tt
+   g   gctc     t
+    gta    g     g
+            t-aag
+            c-g
+            g-c
+            g-c
+            g-c
+           c   a
+           t   a
+            cat
+ 
+ 
+ 
+    tRNA-Met(cat)
+    77 bases, %GC = 59.7
+    Sequence [4643754,4643830]
+ 
+
+ 
+45.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             c-g
+             t-a
+             c-g
+             a-t     ta
+            t   cctcc  a
+    cga    a    !!!!!  g
+   t   ctcg     ggagg  c
+   g   !!!+    c     tt
+   g   gagt     t
+    ata    a     g
+            c-gcg
+            t-a
+            c-g
+            g-c
+            g-c
+           c   a
+           t   a
+            acg
+ 
+ 
+ 
+    tRNA-Arg(acg)
+    77 bases, %GC = 58.4
+    Sequence c[4659859,4659935]
+ 
+
+ 
+46.
+ 
+                 ca
+                c
+               g
+             g-c
+             c-g
+             a-t
+             c-g
+             t-a
+             c-g
+             a-t     ta
+            t   cctcc  a
+    cga    a    !!!!!  g
+   t   ctcg     ggagg  c
+   g   !!!+    c     tt
+   g   gagt     t
+    ata    a     g
+            c-gcg
+            t-a
+            c-g
+            g-c
+            g-c
+           c   a
+           t   a
+            acg
+ 
+ 
+ 
+    tRNA-Arg(acg)
+    77 bases, %GC = 58.4
+    Sequence c[4660047,4660123]
+ 
+
+ 
+47.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             a-t
+             g-c
+             a-t
+             g-c
+             g-c     ta
+            t   ccccc  a
+    tgag   g    !!!!!  g
+   g    ccg     ggggg  c
+   g    !!!          tt
+   c    ggc     c
+    cgaa       a-t
+            g+t c-g
+            c-g  a-t
+            t-a   c-g
+            c-g    c-g
+            c-g     t+g
+            c-g     c   a
+           c   a      aaa
+           t   a
+            gct
+ 
+ 
+    tRNA-Ser(gct)
+    91 bases, %GC = 65.9
+    Sequence c[4660241,4660331]
+ 
+
+
+48.
+Location [4749731,4750083]
+tmRNA Sequence in refseq|NC_008463.1|chromosome Pseudomonas aeruginosa UCBPP-PA14 chromosome, complete genome. length
+
+1   .   10    .   20    .   30    .   40    .   50
+ggggccgattaggattcgacgccggtaACAAAACTTGAGGGGCATGCCGA
+GCTGGTAGCAGAACTCGTAAATTCGCTGCTGCAAACTTATAGTTgccaac
+gacgacaactacgctctagctgcttaaTGCGGCTAGCAGTCGCTAGGGGA
+TGCCTGTAAACCCGAAACGACTGTCAGATAGAACAGGATCGCCGCCAAGT
+TCGCTGTAGACGTAACGGCTAAAACTCATACAGCTCGCTCCAAGCACCCT
+GCCACTCGGGCGGCGCGGAGTTAACTCAGTAGAGCTGGCTAAGCATGTAG
+AACCGATAGCGGAGagctggcggacgggggttcaaatccccccggctcca
+cca
+
+5' tRNA domain at [1,27]
+3' tRNA domain at [315,353]
+Resume consensus sequence at [88,105]: tatagttgccaacgacga
+
+Tag peptide at [95,127]
+Tag sequence: gcc-aac-gac-gac-aac-tac-gct-cta-gct-gct-taa
+Tag peptide:  Ala-Asn-Asp-Asp-Asn-Tyr-Ala-Leu-Ala-Ala-Stop
+Tag peptide:  ANDDNYALAA*
+Match with many tmRNA tags
+
+ 
+49.
+ 
+                 ca
+                c
+               t
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             c-g
+             g-c     tt
+            t   ttccc  a
+     aa    c    +!!!!  g
+    t  tatg     gaggg  c
+    g  :!!!     c    tt
+    g  ttac     a
+     ca    c    g
+            t-at
+            g-c
+            a-t
+            g-c
+            c-g
+           t   a
+           t   a
+            ccc
+ 
+ 
+ 
+    tRNA-Gly(ccc)
+    74 bases, %GC = 58.1
+    Sequence [4860143,4860216]
+ 
+
+ 
+50.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             c-g
+             a-t     ct
+            t   tcctc  a
+     ga    a    !!!!!  g
+    c  ctcg     aggag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            c-g
+            t-a
+            g-c
+            c-g
+           t   c
+           t   a
+            tgc
+ 
+ 
+ 
+    tRNA-Ala(tgc)
+    76 bases, %GC = 63.2
+    Sequence c[4955398,4955473]
+ 
+
+ 
+51.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             t-a
+             g-c     ta
+            t   ccgtc  a
+    tga    a    !!!!!  g
+   t   ctcg     ggcag  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    g     g
+            c-gag
+            a-t
+            c-g
+            c-g
+            c-g
+           c   a
+           t   a
+            gat
+ 
+ 
+ 
+    tRNA-Ile(gat)
+    77 bases, %GC = 58.4
+    Sequence c[4955502,4955578]
+ 
+
+ 
+52.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             g-c
+             g-c
+             a-t
+             t-a     tt
+            t   tctcc  a
+     ga    a    +!+!!  g
+    t  ctcg     ggggg  c
+   c   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            g.aag
+            c-g
+            t-a
+            c-g
+            a-t
+           t   a
+           t   a
+            cgt
+ 
+ 
+ 
+    tRNA-Thr(cgt)
+    76 bases, %GC = 55.3
+    Sequence c[5232637,5232712]
+ 
+
+ 
+53.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             g-c
+             t-a     ta
+            t   catcc  a
+     ga    a    !!!!!  g
+    t  ctcg     gtagg  c
+   c   !!!!     c    tt
+   g   gagc     t
+    gta         g
+            a-tg
+            g+t
+            t-a
+            t-a
+            g-c
+            g-c
+           c   a
+           t   a
+            ttt
+ 
+ 
+    tRNA-Lys(ttt)
+    76 bases, %GC = 51.3
+    Sequence c[5359393,5359468]
+ 
+
+ 
+54.
+ 
+                 ca
+                c
+               a
+             c-g
+             g-c
+             g-c
+             g-c
+             g-c
+             t-a
+             a-t     ta
+            t   ctctc  a
+    tga    a    !+!!!  g
+   c   cgcg     gggag  c
+   c   !!!!    c     tt
+   g   gcgc     t
+    gta    g     g
+            c-gat
+            c-g
+            t-a
+            g-c
+            c-g
+           t   a
+           t   g
+            tgg
+ 
+ 
+ 
+    tRNA-Pro(tgg)
+    77 bases, %GC = 62.3
+    Sequence c[5359479,5359555]
+ 
+
+ 
+55.
+ 
+                 ca
+                c
+               g
+             t-a
+             c-g
+             c-g
+             g-c
+             c-g
+             g-c
+             a-t     tg
+            t   ggacc  a
+     ga    a    !!!!!  g
+    t  ctcg     cctgg  c
+   c   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            a-tgg
+            a-t
+            t-a
+            g-c
+            a-t
+           c   a
+           t   a
+            gtt
+ 
+ 
+ 
+    tRNA-Asn(gtt)
+    76 bases, %GC = 55.3
+    Sequence c[5359565,5359640]
+ 
+
+ 
+56.
+ 
+ 
+ 
+               t
+             g.g
+             g-c
+             t-a
+             t-a
+             c-g
+             g-c
+             a-t     tc
+            t   cgccc  a
+    cga    a    !!!!!  g
+   c   ctcg     gcggg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            a-tct
+            c-g
+            c-g
+            a-t
+            t-a
+           c   a
+           c   a
+            acg
+ 
+ 
+ 
+    tRNA-Arg(acg)
+    74 bases, %GC = 58.1
+    Sequence [5403550,5403623]
+ 
+
+ 
+57.
+ 
+                 ca
+                c
+               g
+             a-t
+             g-c
+             g-c
+             g-c
+             g-c
+             c-g
+             g-c     ta
+            t   cgacc  a
+     gaa   c    !+!!!  g
+    c   ccg     gttgg  c
+    g   !!!    c     tt
+    g   ggc     g
+     taa   a     t
+            g-cca
+            c-g
+            a-t
+            g-c
+            g-c
+           t   t
+           t   a
+            ttg
+ 
+ 
+ 
+    tRNA-Gln(ttg)
+    75 bases, %GC = 62.7
+    Sequence [5510221,5510295]
+ 
+
+ 
+58.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             c-g
+             t-a
+             a-t
+             c-g
+             a-t     tg
+            t   ggccc  a
+    tga    a    !! !!  a
+   c   ctcg     ccagg  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    g     g
+            c-gat
+            a-t
+            g-c
+            c-g
+            a-t
+           t   a
+           t   a
+            cat
+ 
+ 
+ 
+    tRNA-Met(cat)
+    77 bases, %GC = 53.2
+    Sequence [5513969,5514045]
+ 
+
+ 
+59.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             c-g
+             a-t     ct
+            t   tcctc  a
+     ga    a    !!!!!  g
+    c  ctcg     aggag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            c-g
+            t-a
+            g-c
+            c-g
+           t   c
+           t   a
+            tgc
+ 
+ 
+ 
+    tRNA-Ala(tgc)
+    76 bases, %GC = 63.2
+    Sequence c[5539412,5539487]
+ 
+
+ 
+60.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             t-a
+             g-c     ta
+            t   ccgtc  a
+    tga    a    !!!!!  g
+   t   ctcg     ggcag  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    g     g
+            c-gag
+            a-t
+            c-g
+            c-g
+            c-g
+           c   a
+           t   a
+            gat
+ 
+ 
+ 
+    tRNA-Ile(gat)
+    77 bases, %GC = 58.4
+    Sequence c[5539516,5539592]
+ 
+
+ 
+61.
+ 
+                 ca
+                c
+               a
+             c a
+             g-c
+             c-g
+             g-c
+             g-c
+             g-c
+             g-c     ta
+            t   cgacc  a
+    tga    g    !+!!!  a
+   c   cgag     gttgg  c
+   t   !!!!    c     tt
+   g   gctc     t
+    gta    g     g
+            t-aag
+            c-g
+            g-c
+            g-c
+            g-c
+           c   a
+           t   a
+            cat
+ 
+ 
+ 
+    tRNA-Met(cat)
+    77 bases, %GC = 62.3
+    Sequence c[5604017,5604093]
+ 
+
+ 
+62.
+ 
+                 ca
+                c
+               a
+             g+t
+             c-g
+             c-g
+             g-c
+             a-t
+             g-c
+             g-c     tg
+            t   tcccc  a
+    taag   g    !!!!!  g
+   t    gtg     agggg  c
+   g    !!!     t    tt
+   g    cac      g
+    taga       g+t
+            g+t g-c
+            c-g  c-g
+            t-a  c   g
+            a-t    ata
+            c-g
+            c-g
+           t   t
+           t   g
+            gag
+ 
+ 
+    tRNA-Leu(gag)
+    86 bases, %GC = 59.3
+    Sequence c[5604184,5604269]
+ 
+
+ 
+63.
+ 
+                 ca
+                c
+               g
+             g-c
+             g-c
+             a-t
+             a-t
+             g-c
+             g-c
+             c-g
+             a-t     tc
+            a   caccc  a
+    c      t    !!!!!  g
+   g ccgcac     gtggg  c
+   g !!!!!!     g    tt
+     ggcgtg      g
+    t          gg+t
+            g+t  g-c
+            c-g   g-c
+            c-g    g+t
+            g-c     a-t
+            g-c      c-g
+            a-t       g-c
+           c   a      g   c
+           t   a        cag
+            tca
+ 
+    tRNA-SeC(tca)
+    96 bases, %GC = 67.7
+    Sequence c[5658403,5658498]
+ 
+
+ 
+64.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             c-g
+             a-t
+             g-c
+             g-c     tg
+            t   tcttc  a
+    taag   g    +!!!!  g
+   t    gcg     ggaag  c
+   g    !!!          tt
+   g    cgc     t
+    taga   a   c-g
+            c-g g-c
+            t-a  g-c
+            a-t   t-a
+            g-c    g-c
+            g-c    g   a
+           t   t     ca
+           t   g
+            cag
+ 
+ 
+ 
+    tRNA-Leu(cag)
+    87 bases, %GC = 59.8
+    Sequence [5813004,5813090]
+ 
+
+ 
+65.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             c-g
+             a-t
+             g-c
+             g-c     tg
+            t   tcttc  a
+    taag   g    +!!!!  g
+   t    gcg     ggaag  c
+   g    !!!          tt
+   g    cgc     t
+    taga   a   c-g
+            c-g g-c
+            t-a  g-c
+            a-t   t-a
+            g-c    g-c
+            g-c    g   a
+           t   t     ca
+           t   g
+            cag
+ 
+ 
+ 
+    tRNA-Leu(cag)
+    87 bases, %GC = 59.8
+    Sequence [5813220,5813306]
+ 
+
+ 
+66.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             c-g
+             a-t
+             g-c
+             g-c     tt
+            t   ctgcc  a
+     ga    a    !+!!!  g
+    t  ctcg     ggcgg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            g-cgt
+            g-c
+            g-c
+            g-c
+            a-t
+           t   a
+           t   a
+            gaa
+ 
+ 
+ 
+    tRNA-Phe(gaa)
+    76 bases, %GC = 60.5
+    Sequence [6070731,6070806]
+ 
+
+ 
+67.
+ 
+                 ca
+                c
+               a
+             g-c
+             c-g
+             c-g
+             g-c
+             g-c
+             t+g
+             a-t     tc
+            t   ggtcc  a
+     ga    a    !!+!!  g
+    c  ctcg     ccggg  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gta    a     g
+            a-tag
+            c-g
+            t-a
+            g-c
+            a-t
+           c   a
+           t   a
+            tgt
+ 
+ 
+ 
+    tRNA-Thr(tgt)
+    76 bases, %GC = 57.9
+    Sequence [6082141,6082216]
+ 
+
+ 
+68.
+ 
+ 
+ 
+               t
+             g+t
+             c-g
+             c-g
+             c c
+             a-t
+             g-c
+             g-c     c
+            t   tgcgc t
+     tg    g    !!!!!  g
+    t  actg     acgcg  c
+    g   !+!      g   at
+     g cggc       a
+      g            a
+            c-gc    g
+            t c c    g
+            c-g  g    t
+            g-c   g    g
+            c c    g    g
+            c-g     c    c
+           c   c     a   t
+           t   a      a   c
+            act        g   g
+                        a  c
+                         tc
+    tRNA-Ser(act)
+    91 bases, %GC = 70.3
+    Sequence [6288750,6288840]
+ 
+
+ 
+69.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g+t
+             g-c
+             c-g
+             c-g
+             a-t     ct
+            t   tcctc  a
+     ga    a    !!!!!  g
+    c  ctcg     aggag  c
+   t   !!!!    c     tt
+   g   gagc     t
+    gga    g     g
+            c-gag
+            c-g
+            t-a
+            g-c
+            c-g
+           t   c
+           t   a
+            tgc
+ 
+ 
+ 
+    tRNA-Ala(tgc)
+    76 bases, %GC = 63.2
+    Sequence c[6315883,6315958]
+ 
+
+ 
+70.
+ 
+                 ca
+                c
+               a
+             g-c
+             g-c
+             g-c
+             t-a
+             c-g
+             t-a
+             g-c     ta
+            t   ccgtc  a
+    tga    a    !!!!!  g
+   t   ctcg     ggcag  c
+   g   !!!!    c     tt
+   g   gagc     t
+    tta    g     g
+            c-gag
+            a-t
+            c-g
+            c-g
+            c-g
+           c   a
+           t   a
+            gat
+ 
+ 
+ 
+    tRNA-Ile(gat)
+    77 bases, %GC = 58.4
+    Sequence c[6315987,6316063]
+ 
+
+
+
+tRNA anticodon frequency
+AAA Phe       AGA Ser       ATA Tyr       ACA Cys       
+GAA Phe  1    GGA Ser  1    GTA Tyr  1    GCA Cys  1    
+TAA Leu       TGA Ser  1    TTA Stop      TCA SeC  1    
+CAA Leu  1    CGA Ser  2    CTA Pyl       CCA Trp  3    
+
+AAG Leu       AGG Pro       ATG His       ACG Arg  3    
+GAG Leu  1    GGG Pro  1    GTG His  2    GCG Arg       
+TAG Leu  1    TGG Pro  1    TTG Gln  1    TCG Arg       
+CAG Leu  2    CGG Pro  1    CTG Gln       CCG Arg  1    
+
+AAT Ile       AGT Thr       ATT Asn       ACT Ser  2    
+GAT Ile  4    GGT Thr  1    GTT Asn  2    GCT Ser  1    
+TAT Ile       TGT Thr  1    TTT Lys  2    TCT Arg  2    
+CAT Met  4    CGT Thr  1    CTT Lys       CCT Arg  1    
+
+AAC Val       AGC Ala       ATC Asp       ACC Gly       
+GAC Val  1    GGC Ala  2    GTC Asp  4    GCC Gly  3    
+TAC Val  2    TGC Ala  5    TTC Glu  3    TCC Gly  1    
+CAC Val       CGC Ala       CTC Glu       CCC Gly  1    
+
+tRNA codon frequency
+TTT Phe       TCT Ser       TAT Tyr       TGT Cys       
+TTC Phe  1    TCC Ser  1    TAC Tyr  1    TGC Cys  1    
+TTA Leu       TCA Ser  1    TAA Stop      TGA SeC  1    
+TTG Leu  1    TCG Ser  2    TAG Pyl       TGG Trp  3    
+
+CTT Leu       CCT Pro       CAT His       CGT Arg  3    
+CTC Leu  1    CCC Pro  1    CAC His  2    CGC Arg       
+CTA Leu  1    CCA Pro  1    CAA Gln  1    CGA Arg       
+CTG Leu  2    CCG Pro  1    CAG Gln       CGG Arg  1    
+
+ATT Ile       ACT Thr       AAT Asn       AGT Ser  2    
+ATC Ile  4    ACC Thr  1    AAC Asn  2    AGC Ser  1    
+ATA Ile       ACA Thr  1    AAA Lys  2    AGA Arg  2    
+ATG Met  4    ACG Thr  1    AAG Lys       AGG Arg  1    
+
+GTT Val       GCT Ala       GAT Asp       GGT Gly       
+GTC Val  1    GCC Ala  2    GAC Asp  4    GGC Gly  3    
+GTA Val  2    GCA Ala  5    GAA Glu  3    GGA Gly  1    
+GTG Val       GCG Ala       GAG Glu       GGG Gly  1    
+
+Number of tRNA genes = 69
+tRNA GC range = 51.3% to 76.7%
+Number of tmRNA genes = 1
+
+
+Configuration: aragorn plugins/Aragorn/example/PA14.fasta 
